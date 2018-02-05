@@ -1,7 +1,7 @@
 
 general:
     artifacts:
-        - /home/ubuntu/Math-OP/app/build/outputs/apk/
+        - /home/ubuntu/SpeedMatch/app/build/outputs/apk/
 
 machine:
     environment:
