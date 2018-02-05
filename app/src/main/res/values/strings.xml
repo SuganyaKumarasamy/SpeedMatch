@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Speed Match</string>
+    <string name="app_description">Speed</string>
+    <string name="game_description">Does this symbol match the previous symbol?</string>
+
+    <string name="best_score">Best Score</string>
+    <string name="maximum_cards">Maximum Cards</string>
+    <string name="time_text">Time </string>
+    <string name="formatted_time">0:%1s</string>
+    <string name="score_text">Score </string>
+    <string name="game_over">Game Over</string>
+    <string name="high_score">High Score</string>
+    <string name="game_over_message">You scored %1$d (%2$d cards)\n\nGame Over!</string>
+
+    <string name="cta_yes">Yes</string>
+    <string name="cta_no">No</string>
+    <string name="cta_play_game">Play Game</string>
+    <string name="cta_restart_game">Restart Game</string>
+    <string name="cta_rate_us">Rate Us</string>
+    <string name="cta_share">Share</string>
+
+    <string name="share_via_message">Share via</string>
+    <string name="share_via_subject">Color Match</string>
+    <string name="share_via_text">http://play.google.com/store/apps/details?id=com.ksug.speedmatch</string>
+
+    <string name="copyright_message">Copyright \u00A9 Speed Match 2018. All rights reserved.</string>
+</resources>

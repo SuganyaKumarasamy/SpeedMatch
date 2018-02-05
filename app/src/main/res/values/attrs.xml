@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCardView">
+        <attr name="top" format="integer" localization="suggested" />
+        <attr name="bottomLeft" format="integer" localization="suggested" />
+        <attr name="bottomRight" format="integer" localization="suggested" />
+    </declare-styleable>
+
+</resources>

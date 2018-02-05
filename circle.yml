@@ -1,0 +1,23 @@
+machine:
+    environment:
+
+general:
+  branches:
+    only:
+      - master # list of branches to build
+
+dependencies:
+    pre:
+            - echo y | android update sdk --no-ui --all --filter "tools,platform-tools,build-tools,android-26"
+            - echo y | android update sdk --no-ui --all --filter "build-tools-26.1.0"
+    override:
+        - chmod +x gradlew
+        - ./gradlew dependencies
+
+test:
+    override:
+        #assemble the apk if tests were successful
+        - ./gradlew clean assemble uploadProdReleaseToHockeyApp
+
+        # copy the build to the artifacts.
+        - cp -r app/build/outputs/apk $CIRCLE_ARTIFACTS
