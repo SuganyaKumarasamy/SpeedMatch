@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1096866354553",
+    "firebase_url": "https://speedmatch-dc572.firebaseio.com",
+    "project_id": "speedmatch-dc572",
+    "storage_bucket": "speedmatch-dc572.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096866354553:android:16c669d8cc5687f8",
+        "android_client_info": {
+          "package_name": "com.ksug.speedmatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096866354553-sk9p5nu6g7al21t9h8a89q0ujobsoghn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ksug.speedmatch",
+            "certificate_hash": "6c9b57d13677a115da9ba3febf5ea718b7e7fea1"
+          }
+        },
+        {
+          "client_id": "1096866354553-ug8pnci9lh4pqoq52suol9quk1f17f6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5EKLFplkeYJpVgzaARTmpXCGkQIMWouE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096866354553-ug8pnci9lh4pqoq52suol9quk1f17f6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
