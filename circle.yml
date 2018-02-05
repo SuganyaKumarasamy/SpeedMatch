@@ -1,23 +1,17 @@
-machine:
-    environment:
 
 general:
-  branches:
-    only:
-      - master # list of branches to build
+    artifacts:
+        - /home/ubuntu/Math-OP/app/build/outputs/apk/
+
+machine:
+    environment:
+        ANDROID_HOME: /usr/local/android-sdk-linux
 
 dependencies:
-    pre:
-            - echo y | android update sdk --no-ui --all --filter "tools,platform-tools,build-tools,android-26"
-            - echo y | android update sdk --no-ui --all --filter "build-tools-26.1.0"
     override:
-        - chmod +x gradlew
-        - ./gradlew dependencies
+        - echo y | android update sdk --no-ui --all --filter tools,platform-tools,build-tools-26.1.0,android-26,extra-google-m2repository,extra-google-google_play_services,extra-android-support
+        - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
 
 test:
     override:
-        #assemble the apk if tests were successful
-        - ./gradlew clean assemble uploadProdReleaseToHockeyApp
-
-        # copy the build to the artifacts.
-        - cp -r app/build/outputs/apk $CIRCLE_ARTIFACTS
+        - ./gradlew clean assemble uploadProdDebugToHockeyApp
