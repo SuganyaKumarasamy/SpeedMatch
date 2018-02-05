@@ -17,7 +17,7 @@ android {
     compileSdkVersion 26
     defaultConfig {
         applicationId "com.ksug.speedmatch"
-        minSdkVersion 19
+        minSdkVersion 16
         targetSdkVersion 26
         versionCode appVersionCode()
         versionName appVersionName()
