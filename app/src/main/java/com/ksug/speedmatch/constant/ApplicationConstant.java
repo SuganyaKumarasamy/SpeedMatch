@@ -10,9 +10,13 @@ public abstract class ApplicationConstant {
     public static final int COUNT_DOWN_TIMER = 2;
     public static final long MILLI_SECOND = 1000;
     public static final long FADE_OUT_DURATION = 500;
+    public static final long FADE_IN_DURATION = 200;
 
     public static final int BG_SAME = R.drawable.normal_circle;
     public static final int BG_DIFFERENT = R.drawable.different_circle;
+    public static final String QUESTION_SET_A = "A";
+    public static final String QUESTION_SET_B = "B";
+    public static final String QUESTION_SET_C = "C";
 
     public static final int BONUS_SPLIT = 5;
 

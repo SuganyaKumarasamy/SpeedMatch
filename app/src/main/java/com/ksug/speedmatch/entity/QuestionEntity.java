@@ -12,6 +12,8 @@ public class QuestionEntity {
     private Drawable colorBottomLeft;
     private Drawable colorBottomRight;
     private boolean isCorrect;
+    public String presentQuestionSet;
+    public String previousQuestionSet;
 
     public Drawable getColorTopPrevious() {
         return colorTopPrevious;
@@ -58,6 +60,22 @@ public class QuestionEntity {
 
     public void setColorBottomRight(Drawable colorBottomRight) {
         this.colorBottomRight = colorBottomRight;
+    }
+
+    public String getPresentQuestionSet() {
+        return presentQuestionSet;
+    }
+
+    public void setPresentQuestionSet(String presentQuestionSet) {
+        this.presentQuestionSet = presentQuestionSet;
+    }
+
+    public String getPreviousQuestionSet() {
+        return previousQuestionSet;
+    }
+
+    public void setPreviousQuestionSet(String previousQuestionSet) {
+        this.previousQuestionSet = previousQuestionSet;
     }
 
     public boolean isCorrect() {

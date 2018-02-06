@@ -40,7 +40,7 @@
                     android:id="@+id/bottom_left_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/different_circle" />
+                    android:background="@drawable/normal_circle" />
 
                 <View
                     android:layout_width="30dp"
@@ -50,7 +50,7 @@
                     android:id="@+id/bottom_right_image"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/different_circle" />
+                    android:background="@drawable/normal_circle" />
             </LinearLayout>
 
 

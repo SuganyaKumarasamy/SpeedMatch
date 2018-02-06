@@ -116,11 +116,8 @@ public class GameActivity extends BaseActivity {
         score = 0;
         successiveCorrectAnswers = 0;
         correctAnswers = 0;
+        getNewQuestion();
         startGameTimer(ApplicationConstant.GAME_PLAY_TIME);
-        questionEntity = new QuestionEntity();
-        questionEntity.setColorTop(getResources().getDrawable(R.drawable.different_circle));
-        questionEntity.setColorBottomLeft(getResources().getDrawable(R.drawable.normal_circle));
-        questionEntity.setColorBottomRight(getResources().getDrawable(R.drawable.normal_circle));
     }
 
     private void toggleQuestionView(boolean isHidden) {
@@ -142,8 +139,10 @@ public class GameActivity extends BaseActivity {
     }
 
     private void getNewQuestion() {
-        questionEntity = QuestionGenerator.getQuestion(GameActivity.this, questionEntity.getColorTop(), questionEntity.getColorBottomLeft(), questionEntity.getColorBottomRight());
+        questionEntity = QuestionGenerator.getQuestion(GameActivity.this, questionEntity);
         customCardViewOption.setCustomBackgroundColor(questionEntity.getColorTop(), questionEntity.getColorBottomLeft(), questionEntity.getColorBottomRight());
+        fadeOutAndHideView(customCardViewOption);
+        fadeInAndShowView(customCardViewOption);
     }
 
     private void gameOver() {
@@ -235,14 +234,14 @@ public class GameActivity extends BaseActivity {
         mScore.setText(TextUtil.getFormattedScore(score));
     }
 
-    private void fadeOutAndHideView(final View imageView) {
+    private void fadeOutAndHideView(final View view) {
         Animation fadeOut = new AlphaAnimation(1, 0);
         fadeOut.setInterpolator(new AccelerateInterpolator());
         fadeOut.setDuration(ApplicationConstant.FADE_OUT_DURATION);
 
         fadeOut.setAnimationListener(new Animation.AnimationListener() {
             public void onAnimationEnd(Animation animation) {
-                imageView.setVisibility(View.INVISIBLE);
+                view.setVisibility(View.INVISIBLE);
             }
 
             public void onAnimationRepeat(Animation animation) {
@@ -251,7 +250,26 @@ public class GameActivity extends BaseActivity {
             public void onAnimationStart(Animation animation) {
             }
         });
-        imageView.startAnimation(fadeOut);
+        view.startAnimation(fadeOut);
+    }
+
+    private void fadeInAndShowView(final View view) {
+        Animation fadeOut = new AlphaAnimation(0, 1);
+        fadeOut.setInterpolator(new AccelerateInterpolator());
+        fadeOut.setDuration(ApplicationConstant.FADE_IN_DURATION);
+
+        fadeOut.setAnimationListener(new Animation.AnimationListener() {
+            public void onAnimationEnd(Animation animation) {
+                view.setVisibility(View.VISIBLE);
+            }
+
+            public void onAnimationRepeat(Animation animation) {
+            }
+
+            public void onAnimationStart(Animation animation) {
+            }
+        });
+        view.startAnimation(fadeOut);
     }
 
     @SuppressLint("SetTextI18n")

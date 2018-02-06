@@ -9,14 +9,14 @@
     <color name="colorRed">#BC0000</color>
     <color name="colorBlue">#004CFC</color>
     <color name="colorGreen">#03A900</color>
-    <color name="colorDarkBlue">#1A3467</color>
-    <color name="colorLightBlue">#CC1A3467</color>
-    <color name="colorDarkGreen">#00BF3E</color>
+    <color name="colorDarkBlue">#54f761</color>
+    <color name="colorLightBlue">#CCA9fCAF</color>
+    <color name="colorDarkGreen">#A9fCAF</color>
     <color name="colorLtBlue">#0277BD</color>
 
     <color name="lightRed">#CCff4444</color>
 
-    <color name="colorlightTransperant">#80FFFFFF</color>
+    <color name="colorlightTransperant">#AAFFFFFF</color>
     <color name="colorPimaryTransparant">#AA000000</color>
 
     <color name="colorOptionLight">#FFF7F7F7</color>

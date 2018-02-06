@@ -6,15 +6,15 @@
             <!--shadow Color-->
         </shape>
     </item>
-    <item  android:left="1dp"
-        android:right="1dp"
-        android:top="1dp"
-        android:bottom="1dp">
+    <item android:left="0.5dp"
+        android:right="0.5dp"
+        android:top="0.51dp"
+        android:bottom="0.5dp">
         <shape android:shape="oval">
             <solid android:color="@color/colorYellow"/>
             <stroke android:color="@android:color/holo_red_light" android:width="4dp"/>
             <!-- Set the same value for both width and height to get a circular shape -->
-            <size android:width="23dp" android:height="23dp"/>
+            <size android:width="20dp" android:height="20dp"/>
         </shape>
     </item>
 </layer-list>

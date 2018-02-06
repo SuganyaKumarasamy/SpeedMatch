@@ -38,6 +38,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_gravity="center"
+            android:alpha="0.9"
             android:contentDescription="@string/app_name"
             android:padding="10dp"
             android:src="@drawable/ic_restart" />
@@ -171,6 +172,7 @@
                 android:layout_height="64dp"
                 android:contentDescription="@string/app_name"
                 android:padding="8dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginStart="40dp"
                 android:gravity="top"
                 android:layout_gravity="top|center"
@@ -211,7 +213,7 @@
             android:background="@drawable/option_button_color"
             android:padding="8dp"
             android:text="@string/cta_no"
-            android:textColor="@color/colorLtBlue"
+            android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -224,7 +226,7 @@
             android:background="@drawable/option_button_color"
             android:padding="8dp"
             android:text="@string/cta_yes"
-            android:textColor="@color/colorLtBlue"
+            android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
 
