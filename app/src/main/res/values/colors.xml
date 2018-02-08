@@ -9,10 +9,11 @@
     <color name="colorRed">#BC0000</color>
     <color name="colorBlue">#004CFC</color>
     <color name="colorGreen">#03A900</color>
-    <color name="colorDarkBlue">#54f761</color>
-    <color name="colorLightBlue">#CCA9fCAF</color>
+    <color name="colorDarkBlue">#4BDAEA</color>
     <color name="colorDarkGreen">#A9fCAF</color>
     <color name="colorLtBlue">#0277BD</color>
+    <color name="colorDifferentOuter">#0fa300</color>
+    <color name="colorDifferentInner">#700fa300</color>
 
     <color name="lightRed">#CCff4444</color>
 
